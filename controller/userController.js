@@ -1,10 +1,10 @@
-// Import the User model from userModel.js
+
 import User from "../model/userModel.js";
 
-// For posting data into the database
+
 export const create = async(req, res)=>{
     try {
-        // Create a new User instance with the request body
+        
         const userData = new User( req.body);
         const {email} = userData;
         // Check if a user with the same email already exists
