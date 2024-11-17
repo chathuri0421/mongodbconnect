@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 
-//Line to to added 
+
 import route from "./routes/userRoute.js";
 
 const app = express();
@@ -24,5 +24,5 @@ mongoose
   })
   .catch((error) => console.log(error));
 
-// Line to be added 
+
 app.use("/api/user", route);
